@@ -1,0 +1,140 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #000
+}
+
+ul,a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    color: #fff;
+}
+
+.tittle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tittle h1{
+    font-size: 4rem;
+    position: relative;
+}
+
+.tittle h2{
+    font-size: 1rem;
+    position: relative;
+}
+
+.content{
+    max-width: 40rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left:1rem;
+    margin-right: 1rem;
+    margin-top: 4rem;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    margin-top: 5rem;
+}
+
+.random{
+    height: 4rem;
+    background-color: #fff;
+    width: 35rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.icon-face{
+    color: rgb(42, 129, 187);
+}
+
+.icon-zap{
+    color: rgb(75, 216, 39);
+}
+
+
+
+.copy{
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+}
+/* effects */
+
+
+.random:hover{
+    transition: all 1s;
+    scale: 1.05;
+}
+
+/* Media querys */
+
+@media(max-width: 500px){
+    .linha-left{
+        position: absolute;
+        top: 9.5rem;
+        left: 13rem;
+        width: 5rem;
+        height: 1px;
+        background-color: #fff;
+    }
+    
+    .linha-right{
+        position: absolute;
+        top: 9.5rem;
+        right: 13rem;
+        width: 5rem;
+        height: 1px;
+        background-color: #fff;
+    }
+}
+
+@media(max-width: 400px){
+    .linha-left{
+        display: none;
+    }
+    
+    .linha-right{
+        display: none;
+    }
+}
